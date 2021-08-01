@@ -1,4 +1,4 @@
-[look at](https://github.com/propelorm/Propel2/issues/1745) about this repository
+[look at](https://github.com/propelorm/Propel2/issues/1745#issuecomment-890581484) about this repository
 
 # Usage
 
