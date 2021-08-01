@@ -10,6 +10,10 @@ Change directory
 
 `cd TryingSqlReserved`
 
+Create directories for classmap in composer.json
+
+`mkdir -p propel/model`
+
 Install dependence
 
 `composer install`
@@ -30,7 +34,12 @@ Generate propel model classes
 
 `./vendor/bin/propel model:build --output-dir="propel/model"`
 
+Update autoload
+
+`composer dump-autoload`
+
 Generate propel config file
+
 `./vendor/bin/propel config:convert --output-dir="propel"`
 
 Generate model classes that using propel models
