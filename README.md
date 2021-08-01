@@ -39,8 +39,8 @@ Generate model classes that using propel models
 
 Generate phpunit test classes
 
-`php ./phpunit-generator.php` (not completed)
+`php ./phpunit-generator.php`
 
 Start testing to check all sql reserved keyword as table or column name in propel orm
 
-`./vendor/bin/phpunit --testsuite models`
+`./vendor/bin/phpunit --testsuite models --color`

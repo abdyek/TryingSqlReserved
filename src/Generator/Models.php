@@ -36,7 +36,7 @@ class Models {
     }
     private static function createGetByXMethod($className, $keyword) {
         $content = "\tpublic static function getBy" . Tool::formatPascalCaseFromUnderscores($keyword) . '($value) {' . PHP_EOL;
-        $content .= "\t\treturn \\" . $className . 'Query::create()->filterBy'. $keyword . '($value)->findOne();' . PHP_EOL;
+        $content .= "\t\treturn \\" . $className . 'Query::create()->filterBy'. Tool::formatPascalCaseFromUnderscores($keyword) . '($value)->findOne();' . PHP_EOL;
         $content .= "\t}" . PHP_EOL;
         return $content;
     }
