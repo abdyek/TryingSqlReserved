@@ -2,14 +2,14 @@
 
 namespace TryingSqlReserved\Generator;
 use TryingSqlReserved\Config;
+use TryingSqlReserved\Tool;
 
 class Schema {
     public function __construct($dbName) {
         $this->dbName = $dbName;
     }
     public function create() {
-        $reserved = file_get_contents('./reserved.json');
-        $this->reserved = json_decode($reserved, true)['reserved'];
+        $this->reserved = Tool::getReservedKeyword();
         $content = '<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL.'<database name="'.$this->dbName.'" defaultIdMethod="native" identifierQuoting="true">'.PHP_EOL;
         foreach($this->reserved as $keyword) {
             $content .= $this->generateTable($keyword);

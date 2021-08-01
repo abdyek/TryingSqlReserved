@@ -35,3 +35,6 @@ tags
 /propel/
 schema.xml
 /generated-conf/loadDatabase.php
+/abdyek-other/
+/.phpunit.cache/
+/src/Models/

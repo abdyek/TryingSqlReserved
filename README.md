@@ -35,7 +35,7 @@ Generate propel config file
 
 Generate model classes that using propel models
 
-`php ./models-generator.php` (not completed)
+`php ./models-generator.php`
 
 Generate phpunit test classes
 
